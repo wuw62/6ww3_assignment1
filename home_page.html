@@ -8,141 +8,8 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
-        .menu {
-            background-color: rgba(224, 240, 250, 0.6);
-            text-align: left;
-            font-family: cursive;
-            font-size: 30px;
-            color: rgb(69, 69, 69);
-            position: fixed;
-            top: 7px;
-            right: 7px;
-            left: 7px;
-            height: 50px;
-            padding: 20px;
-        }
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 
-        .menu a:hover {
-            color: black
-        }
-
-        .search-container {
-            float: right;
-            max-width: 300px;
-            border: none;
-            vertical-align: middle;
-        }
-
-        .search-container input[type=text] {
-            font-size: 18px;
-            font-family: sans-serif;
-            height: 28px;
-            border: none;
-            vertical-align: middle;
-        }
-
-        .search-container button {
-            color: #00838F;
-            margin-left: -9px;
-            margin-right: 20px;
-            height: 30px;
-            background: white;
-            font-family: sans-serif;
-            font-size: 18px;
-            border: none;
-            vertical-align: middle;
-            cursor: pointer;
-        }
-
-        .dropdown {
-            float: right;
-            overflow: hidden;
-            border: none;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 16px;
-            width: 80px;
-            height: 30px;
-            font-family: sans-serif;
-            outline: none;
-            color: rgb(69, 69, 69);
-            padding: 6px;
-            background-color: white;
-            Margin-right: 20px;
-            vertical-align: middle;
-            border: none;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: powderblue;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            min-width: 80px;
-            Background-color: white;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            font-family: sans-serif;
-            font-size: 19px;
-            text-align: center;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #00838F;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        body {
-            background: url("background_image.jpg");
-            height: 100%;
-            width: 100%;
-            background-size: cover;
-            position: absolute;
-            overflow: hidden;
-        }
-
-        .add-object-button {
-            position: fixed;
-            bottom: 110px;
-            right: 30px;
-            border: none;
-            color: black;
-            background: transparent;
-            padding: none;
-            font-size: 50px;
-            cursor: pointer;
-
-        }
-
-        .footer {
-            background-color: rgba(224, 240, 250, 0.6);
-            left: 0;
-            color: black;
-            bottom: 0;
-            height: 70px;
-            text-align: left;
-            position: fixed;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-            bottom: 7px;
-            right: 7px;
-            left: 7px;
-        }
-    </style>
 </head>
 
 <body>
@@ -159,7 +26,8 @@
             <form class="search-container" action="">
                 <input type="text" placeholder="Search.." name="search">
                 <a href='search_result_listview_page.html'>
-                    <button type="button" onclick="window.location.href('search_result_listview_page.html')"><i class="fa fa-search" title="search"></i></button>
+                    <button type="button" onclick="window.location.href('search_result_listview_page.html')"><i
+                            class="fa fa-search" title="search"></i></button>
                 </a>
             </form>
             <div class="dropdown">
