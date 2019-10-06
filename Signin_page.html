@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>6ww3 Assignment1</title>
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Style the menu bar */
+        .menu {
+            background-color: rgba(224, 240, 250, 0.6);
+            text-align: left;
+            font-family: cursive;
+            font-size: 30px;
+            color: rgb(69, 69, 69);
+            height: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        /* Change the color of the text on mouse-over */
+        .menu a:hover {
+            color: black
+        }
+
+        .search-container {
+            float: right;
+            max-width: 300px;
+        }
+
+        .search-container input[type=text] {
+            font-size: 17px;
+            height: 28px;
+            border: none;
+        }
+
+        .search-container button {
+            color: #00838F;
+            margin-left: -9px;
+            margin-right: 20px;
+            height: 30px;
+            background: white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            float: right;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            width: 80px;
+            height: 30px;
+            font-family: sans-serif;
+            outline: none;
+            color: rgb(69, 69, 69);
+            padding: 6px;
+            background-color: white;
+            Margin-right: 20px;
+            border: none;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: powderblue;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 80px;
+            Background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            font-family: sans-serif;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #00838F;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        body {
+            background-image: url("background_image.jpg");
+            background-size: 1920px 1080px;
+        }
+
+
+
+        .footer {
+            background-color: rgba(224, 240, 250, 0.6);
+            left: 0;
+            color: black;
+            bottom: 0;
+            text-align: left;
+            position: fixed;
+            width: 100%;
+        }
+
+
+
+        /* Style the container */
+        .Sign-register-container {
+            border-radius: 30px;
+            padding: 50px;
+            background-color: rgba(224, 240, 250, 0.6);
+            text-align: center;
+            height: 400px;
+            width: 200px;
+            margin-left: 40vw;
+            margin-top: 10vh;
+            /* this is half the height of your div*/
+
+        }
+
+        /* Full-width input fields */
+        .Sign-register-container. input[type=text],
+        .Sign-register-container. input[type=password] {
+            width: 30%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: white;
+        }
+
+        .Sign-register-container. input[type=text]:focus,
+        .Sign-register-container. input[type=password]:focus {
+            background-color: lightskyblue;
+            outline: none;
+        }
+
+        div.username-textbox-gap {
+            line-height: 60%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <div><a>allUsee</a>
+            <div class="dropdown">
+                <button class="dropbtn" style="width: 120px">
+                    Signin/Signup
+                </button>
+            </div>
+            <form class="search-container" action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="button"><i class="fa fa-search" title="search"></i></button>
+            </form>
+            <div class="dropdown">
+                <button class="dropbtn">Rating
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">name</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="Sign-register-container ">
+        <h1>Sign in for the fun</h1>
+
+        <div class="username-textbox-gap">
+            <p>username</p>
+
+            <input type="text" name="username" required>
+        </div>
+        <br>
+        <div class="username-textbox-gap">
+            <p>password</p>
+            <input type="password" name="password" required>
+        </div>
+        <br>
+        <p><a href="" target="">Don't have an account? Register Here.</a></p>
+
+        <br>
+        <hr>
+        <button type="submit" class="register-button">Sign in</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <p>Copyright © 2019</p>
+        <p>Contact information: <a href="wuw62@mcmaster.ca">wuw62@mcmaster.ca</a> and <a
+                href="zhatiayua59@gmail.com">zhatiayua59@gmail.com</a></p>
+
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
