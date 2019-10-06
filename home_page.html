@@ -15,10 +15,12 @@
             font-family: cursive;
             font-size: 30px;
             color: rgb(69, 69, 69);
-            height: 40px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 20px;
+            position: fixed;
+            top: 7px;
+            right: 7px;
+            left: 7px;
+            height: 50px;
+            padding: 20px;
         }
 
         .menu a:hover {
@@ -28,12 +30,16 @@
         .search-container {
             float: right;
             max-width: 300px;
+            border: none;
+            vertical-align: middle;
         }
 
         .search-container input[type=text] {
-            font-size: 17px;
+            font-size: 18px;
+            font-family: sans-serif;
             height: 28px;
             border: none;
+            vertical-align: middle;
         }
 
         .search-container button {
@@ -42,14 +48,17 @@
             margin-right: 20px;
             height: 30px;
             background: white;
-            font-size: 17px;
+            font-family: sans-serif;
+            font-size: 18px;
             border: none;
+            vertical-align: middle;
             cursor: pointer;
         }
 
         .dropdown {
             float: right;
             overflow: hidden;
+            border: none;
         }
 
         .dropdown .dropbtn {
@@ -62,6 +71,7 @@
             padding: 6px;
             background-color: white;
             Margin-right: 20px;
+            vertical-align: middle;
             border: none;
         }
 
@@ -81,7 +91,7 @@
         .dropdown-content a {
             color: black;
             font-family: sans-serif;
-            font-size: 16px;
+            font-size: 19px;
             text-align: center;
             text-decoration: none;
             display: block;
@@ -96,16 +106,21 @@
         }
 
         body {
-            background-image: url("background_image.jpg");
-            background-size: 1920px 1080px;
+            background: url("background_image.jpg");
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            position: absolute;
+            overflow: hidden;
         }
 
         .add-object-button {
-            float: right;
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
             border: none;
-            margin-top: 65vh;
-            Margin-right: 2vw;
             color: black;
+            background: transparent;
             padding: none;
             font-size: 50px;
             cursor: pointer;
@@ -113,13 +128,19 @@
         }
 
         .footer {
-            background-color: rgba(69, 69, 69, 0.4);
+            background-color: rgba(224, 240, 250, 0.6);
             left: 0;
-            color: white;
+            color: black;
             bottom: 0;
+            height: 70px;
             text-align: left;
             position: fixed;
-            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            bottom: 7px;
+            right: 7px;
+            left: 7px;
         }
     </style>
 </head>
@@ -129,13 +150,17 @@
     <div class="menu">
         <div><a>allUsee</a>
             <div class="dropdown">
-                <button class="dropbtn" style="width: 120px">
-                    Signin/Signup
-                </button>
+                <a href='Signin_page.html'>
+                    <button class="dropbtn" style="width: 120px" onclick="window.location.href('Signin_page.html')">
+                        Signin/Signup
+                    </button>
+                </a>
             </div>
             <form class="search-container" action="">
                 <input type="text" placeholder="Search.." name="search">
-                <button type="button"><i class="fa fa-search" title="search"></i></button>
+                <a href='search_result_listview_page.html'>
+                    <button type="button" onclick="window.location.href('search_result_listview_page.html')"><i class="fa fa-search" title="search"></i></button>
+                </a>
             </form>
             <div class="dropdown">
                 <button class="dropbtn">Rating
@@ -148,13 +173,8 @@
         </div>
     </div>
 
-
-
-
-
-
-
     <div><button class="add-object-button"><i class="fa fa-plus-circle"></i></button></div>
+
     <div class="footer">
         <p>Copyright © 2019</p>
         <p>Contact information: <a href="wuw62@mcmaster.ca">wuw62@mcmaster.ca</a> and <a
@@ -162,15 +182,5 @@
 
     </div>
 </body>
-
-
-
-
-
-
-
-
-
-
 
 </html>
