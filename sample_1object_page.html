@@ -5,7 +5,7 @@
 
     <title>6ww3 Assignment1</title>
 
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -15,15 +15,20 @@
 <body>
 
     <div class="menu">
-        <div><a>allUsee</a>
+        <div><a href="index.html">allUsee</a>
             <div class="dropdown">
-                <button class="dropbtn" style="width: 120px">
-                    Signin/Signup
-                </button>
+                <a href='signin_page.html'>
+                    <button class="dropbtn" style="width: 120px" onclick="window.location.href('signin_page.html')">
+                        Signin/Signup
+                    </button>
+                </a>
             </div>
             <form class="search-container" action="">
                 <input type="text" placeholder="Search.." name="search">
-                <button type="button"><i class="fa fa-search" title="search"></i></button>
+                <a href='search_result_listview_page.html'>
+                    <button type="button" onclick="window.location.href('search_result_listview_page.html')"><i
+                            class="fa fa-search" title="search"></i></button>
+                </a>
             </form>
             <div class="dropdown">
                 <button class="dropbtn">Rating
@@ -36,23 +41,26 @@
         </div>
     </div>
 
-    <div class="result-container-list" >
+    <div class="result-container-list">
         <h3 style=color:Black;>Steel City Billiards</h3>
 
         <div>
-                    1829 Main St W, Hamilton, ON L8S 1H6 
-                    <br>
-                    4.5/5.0
+            1829 Main St W, Hamilton, ON L8S 1H6
+            <br>
+            4.5/5.0
         </div>
         <div>
             <img src="Steel City Billiards1.png" alt="Steel City Billiards1">
         </div>
     </div>
-    <button class="map-view-button">change to map view <i class='fa fa-map'></i></button>
+    <a href="search_result_mapview.html">
+        <button class="map-view-button">change to map view <i class='fa fa-map'
+                onclick="window.location.href('search_result_mapview.html')"></i></button>
+    </a>
     <div class="footer">
         <p>Copyright © 2019</p>
-        <p>Contact information: <a href="wuw62@mcmaster.ca">wuw62@mcmaster.ca</a> and <a
-                href="zhatiayua59@gmail.com">zhatiayua59@gmail.com</a></p>
+        <p>Contact information: wuw62@mcmaster.ca and zhatiayua59@gmail.com</p>
     </div>
 </body>
+
 </html>
