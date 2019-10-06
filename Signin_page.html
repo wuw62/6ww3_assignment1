@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <title>6ww3 Assignment1</title>
@@ -7,21 +8,24 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    
+
 </head>
 
-<body>
-
-    <div class="menu">
-        <div><a>allUsee</a>
+<div class="menu">
+    <div><a href = "home_page.html">allUsee</a>
             <div class="dropdown">
-                <button class="dropbtn" style="width: 120px">
-                    Signin/Signup
-                </button>
+                <a href='signin_page.html'>
+                    <button class="dropbtn" style="width: 120px" onclick="window.location.href('signin_page.html')">
+                        Signin/Signup
+                    </button>
+                </a>
             </div>
             <form class="search-container" action="">
                 <input type="text" placeholder="Search.." name="search">
-                <button type="button"><i class="fa fa-search" title="search"></i></button>
+                <a href='search_result_listview_page.html'>
+                    <button type="button" onclick="window.location.href('search_result_listview_page.html')"><i
+                            class="fa fa-search" title="search"></i></button>
+                </a>
             </form>
             <div class="dropdown">
                 <button class="dropbtn">Rating
@@ -52,7 +56,7 @@
             <input type="password" name="password" required>
         </div>
         <br>
-        <p><a href="" target="">Don't have an account? Register Here.</a></p>
+        <p><a href="register_page.html" target="">Don't have an account? Register Here.</a></p>
 
         <br>
         <hr>
