@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>6ww3 Assignment1</title>
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .menu {
+            background-color: rgba(224, 240, 250, 0.6);
+            text-align: left;
+            font-family: cursive;
+            font-size: 30px;
+            color: rgb(69, 69, 69);
+            height: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .menu a:hover {
+            color: black
+        }
+
+        .search-container {
+            float: right;
+            max-width: 300px;
+        }
+
+        .search-container input[type=text] {
+            font-size: 22px;
+            height: 28px;
+            border: none;
+        }
+
+        .search-container button {
+            color: #00838F;
+            margin-left: -9px;
+            margin-right: 20px;
+            height: 30px;
+            background: white;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            float: right;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            width: 80px;
+            height: 30px;
+            font-family: sans-serif;
+            outline: none;
+            color: rgb(69, 69, 69);
+            padding: 6px;
+            background-color: white;
+            Margin-right: 20px;
+            border: none;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: powderblue;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 80px;
+            Background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            font-family: sans-serif;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #00838F;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        body {
+            background-image: url("background_image.jpg");
+            background-size: 1920px 1080px;
+            background-position: center;
+        }
+
+        .add-object-button {
+            float: right;
+            border: none;
+            margin-top: 65vh;
+            Margin-right: 2vw;
+            color: black;
+            background: transparent;
+            padding: none;
+            font-size: 50px;
+            cursor: pointer;
+
+        }
+
+        .footer {
+            background-color: rgba(69, 69, 69, 0.4);
+            left: 0;
+            color: white;
+            bottom: 0;
+            text-align: left;
+            position: fixed;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <div><a>allUsee</a>
+            <div class="dropdown">
+                <button class="dropbtn" style="width: 120px">
+                    Signin/Signup
+                </button>
+            </div>
+            <form class="search-container" action="">
+                <input type="text" placeholder="search.." name="search">
+                <button type="button"><i class="fa fa-search" title="search"></i></button>
+            </form>
+            <div class="dropdown">
+                <button class="dropbtn">Rating
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">name</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div><button class="add-object-button"><i class="fa fa-plus-circle"></i></button></div>
+
+    <div class="footer">
+        <p>Copyright © 2019</p>
+        <p>Contact information: <a href="wuw62@mcmaster.ca">wuw62@mcmaster.ca</a> and <a
+                href="zhatiayua59@gmail.com">zhatiayua59@gmail.com</a></p>
+
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
