@@ -8,7 +8,6 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<<<<<<< HEAD
     <style>
         .menu {
             background-color: rgba(224, 240, 250, 0.6);
@@ -32,7 +31,7 @@
         }
 
         .search-container input[type=text] {
-            font-size: 17px;
+            font-size: 22px;
             height: 28px;
             border: none;
         }
@@ -43,7 +42,7 @@
             margin-right: 20px;
             height: 30px;
             background: white;
-            font-size: 17px;
+            font-size: 22px;
             border: none;
             cursor: pointer;
         }
@@ -99,6 +98,7 @@
         body {
             background-image: url("background_image.jpg");
             background-size: 1920px 1080px;
+            background-position: center;
         }
 
         .add-object-button {
@@ -107,6 +107,7 @@
             margin-top: 65vh;
             Margin-right: 2vw;
             color: black;
+            background: transparent;
             padding: none;
             font-size: 50px;
             cursor: pointer;
@@ -123,10 +124,6 @@
             width: 100%;
         }
     </style>
-=======
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-
->>>>>>> 2777bfc18bdd44475d3f8c764336b8dce94be46d
 </head>
 
 <body>
@@ -134,28 +131,13 @@
     <div class="menu">
         <div><a>allUsee</a>
             <div class="dropdown">
-<<<<<<< HEAD
                 <button class="dropbtn" style="width: 120px">
                     Signin/Signup
                 </button>
             </div>
             <form class="search-container" action="">
-                <input type="text" placeholder="Search.." name="search">
+                <input type="text" placeholder="search.." name="search">
                 <button type="button"><i class="fa fa-search" title="search"></i></button>
-=======
-                <a href='Signin_page.html'>
-                    <button class="dropbtn" style="width: 120px" onclick="window.location.href('Signin_page.html')">
-                        Signin/Signup
-                    </button>
-                </a>
-            </div>
-            <form class="search-container" action="">
-                <input type="text" placeholder="Search.." name="search">
-                <a href='search_result_listview_page.html'>
-                    <button type="button" onclick="window.location.href('search_result_listview_page.html')"><i
-                            class="fa fa-search" title="search"></i></button>
-                </a>
->>>>>>> 2777bfc18bdd44475d3f8c764336b8dce94be46d
             </form>
             <div class="dropdown">
                 <button class="dropbtn">Rating
@@ -168,18 +150,8 @@
         </div>
     </div>
 
-<<<<<<< HEAD
-
-
-
-
-
-
-    <div><button class="add-object-button" color="none"><i class="fa fa-plus-circle"></i></button></div>
-=======
     <div><button class="add-object-button"><i class="fa fa-plus-circle"></i></button></div>
 
->>>>>>> 2777bfc18bdd44475d3f8c764336b8dce94be46d
     <div class="footer">
         <p>Copyright © 2019</p>
         <p>Contact information: <a href="wuw62@mcmaster.ca">wuw62@mcmaster.ca</a> and <a
@@ -188,7 +160,6 @@
     </div>
 </body>
 
-<<<<<<< HEAD
 
 
 
@@ -199,6 +170,4 @@
 
 
 
-=======
->>>>>>> 2777bfc18bdd44475d3f8c764336b8dce94be46d
 </html>
