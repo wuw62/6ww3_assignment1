@@ -8,14 +8,19 @@
     top: 7px;
     right: 7px;
     left: 7px;
-    height: 50px;
+    height: 70px;
     padding: 20px;
 }
 
 .menu a:hover {
     color: black
 }
+.allUseeLogo{
+    margin-left: 0vw;
+    margin-top: -1vh;
+    padding:none;
 
+}
 .search-container {
     float: right;
     max-width: 300px;
