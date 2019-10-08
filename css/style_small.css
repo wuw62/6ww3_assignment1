@@ -111,7 +111,7 @@ a {
 }
 
 body {
-    background: url("background_image.jpg");
+    background: url("background_image_small.jpg");
     height: 170%;
     width: 96%;
     background-size: cover;
@@ -155,20 +155,21 @@ body {
     background-color: rgba(224, 240, 250, 0.6);
     text-align: center;
     height: 400px;
-    width: 900px;
+    width: 200px;
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
     margin: auto;
+    overflow: scroll;
 }
 
 .list-view-button {
     font-size: 18px;
-    position: fixed;
-    right: 50px;
-    bottom: 130px;
+    position: absolute;
+    right: 5vw;
+    bottom: 20vh;
     padding: none;
 }
 
@@ -179,7 +180,7 @@ body {
     background-color: rgba(224, 240, 250, 0.6);
     text-align: center;
     height: 400px;
-    width: 900px;
+    width: 200px;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -194,8 +195,7 @@ body {
     width: 100%;
 }
 
-th,
-td {
+th, td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid white;
@@ -207,9 +207,9 @@ tr:hover {
 
 .map-view-button {
     font-size: 18px;
-    position: fixed;
-    right: 50px;
-    bottom: 130px;
+    position: absolute;
+    right: 5vw;
+    bottom: 20vh;
     padding: none;
 }
 
@@ -228,8 +228,7 @@ tr:hover {
     margin: auto;
 }
 
-.Sign-register-container. input[type=text],
-.Sign-register-container. input[type=password] {
+.Sign-register-container. input[type=text], .Sign-register-container. input[type=password] {
     width: 30%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -238,8 +237,7 @@ tr:hover {
     background: white;
 }
 
-.Sign-register-container. input[type=text]:focus,
-.Sign-register-container. input[type=password]:focus {
+.Sign-register-container. input[type=text]:focus, .Sign-register-container. input[type=password]:focus {
     background-color: lightskyblue;
     outline: none;
 }
