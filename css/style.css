@@ -1,6 +1,11 @@
+/* This is for getting rid of the underline for website name */
+
 a {
     text-decoration: none
 }
+
+
+/* This is style the nevigation menu */
 
 .menu {
     background-color: rgba(224, 240, 250, 0.6);
@@ -16,13 +21,22 @@ a {
     padding: 20px;
 }
 
+
+/* When mouse hover here, text logo turns black */
+
 .menu a:hover {
     color: black
 }
 
+
+/* This is container for navigation items */
+
 .parent-container {
     float: right;
 }
+
+
+/* This is style for search container in nevigation*/
 
 .parent-container .search-container {
     display: inline;
@@ -32,12 +46,18 @@ a {
     vertical-align: middle;
 }
 
+
+/* This is style for search container input */
+
 .parent-container .search-container input[type=text] {
     font-size: 18px;
     font-family: sans-serif;
     height: 28px;
     border: none;
 }
+
+
+/* This is style for the search container button */
 
 .parent-container .search-container button {
     color: #00838F;
@@ -51,6 +71,9 @@ a {
     cursor: pointer;
 }
 
+
+/* This is style for dropdown */
+
 .parent-container .dropdown {
     display: inline-block;
     text-align: center;
@@ -58,6 +81,9 @@ a {
     border: none;
     vertical-align: middle;
 }
+
+
+/* This is style for dropdown button */
 
 .parent-container .dropdown .dropbtn {
     font-size: 16px;
@@ -72,9 +98,15 @@ a {
     border: none;
 }
 
+
+/* This change color for dropdown button when mouse hover on it */
+
 .parent-container .dropdown:hover .dropbtn {
     background-color: powderblue;
 }
+
+
+/* This is style for dropdown content */
 
 .dropdown-content {
     display: none;
@@ -85,6 +117,9 @@ a {
     z-index: 1;
 }
 
+
+/* This is style for dropdown text */
+
 .dropdown-content a {
     color: black;
     font-family: sans-serif;
@@ -94,13 +129,22 @@ a {
     display: block;
 }
 
+
+/* This change color for dropdown content when mouse hover on it */
+
 .dropdown-content a:hover {
     background-color: #00838F;
 }
 
+
+/* This is block display for dropdown content */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+/* This is style for body */
 
 body {
     background: url("background_image.jpg");
@@ -110,6 +154,9 @@ body {
     position: absolute;
     overflow: hidden;
 }
+
+
+/* This is style for add object button */
 
 .add-object-button {
     position: fixed;
@@ -122,6 +169,9 @@ body {
     font-size: 50px;
     cursor: pointer;
 }
+
+
+/* This is style for footer */
 
 .footer {
     background-color: rgba(224, 240, 250, 0.6);
@@ -139,6 +189,9 @@ body {
     left: 7px;
 }
 
+
+/* This is style for result container  */
+
 .result-container {
     font-family: Verdana;
     border-radius: none;
@@ -155,6 +208,9 @@ body {
     margin: auto;
 }
 
+
+/* This is style for list view button */
+
 .list-view-button {
     font-size: 18px;
     position: fixed;
@@ -162,6 +218,9 @@ body {
     bottom: 130px;
     padding: none;
 }
+
+
+/* This is style for contents in result container */
 
 .result-container-list {
     font-family: Verdana;
@@ -180,10 +239,16 @@ body {
     overflow: scroll;
 }
 
+
+/* This style the table in result container */
+
 .result-container .table {
     border-collapse: collapse;
     width: 100%;
 }
+
+
+/* This is style for table header and cells */
 
 th,
 td {
@@ -192,9 +257,15 @@ td {
     border-bottom: 1px solid white;
 }
 
+
+/* This change the color when mouse hover on it */
+
 tr:hover {
     background-color: white;
 }
+
+
+/* This is style for map view button */
 
 .map-view-button {
     font-size: 18px;
@@ -203,6 +274,9 @@ tr:hover {
     bottom: 130px;
     padding: none;
 }
+
+
+/* This is style for sign register container */
 
 .Sign-register-container {
     border-radius: 30px;
@@ -219,6 +293,9 @@ tr:hover {
     margin: auto;
 }
 
+
+/* This is style for container text input box */
+
 .Sign-register-container. input[type=text],
 .Sign-register-container. input[type=password] {
     width: 30%;
@@ -229,11 +306,17 @@ tr:hover {
     background: white;
 }
 
+
+/* This is style for sign register container text input box */
+
 .Sign-register-container. input[type=text]:focus,
 .Sign-register-container. input[type=password]:focus {
     background-color: lightskyblue;
     outline: none;
 }
+
+
+/* This is for seperation space between username and text box */
 
 div.username-textbox-gap {
     line-height: 60%;

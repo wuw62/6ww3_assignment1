@@ -2,6 +2,9 @@ a {
     text-decoration: none
 }
 
+
+/* Some adjustment for small sized screen  */
+
 .menu {
     background-color: rgba(224, 240, 250, 0.6);
     text-align: center;
@@ -110,6 +113,12 @@ a {
     display: block;
 }
 
+
+/* This use the small sized picture as background for mobile devices */
+
+
+/* Make it scrollable to fit in mobile phone screen */
+
 body {
     background: url("background_image_small.jpg");
     height: 170%;
@@ -195,7 +204,8 @@ body {
     width: 100%;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid white;
@@ -228,7 +238,8 @@ tr:hover {
     margin: auto;
 }
 
-.Sign-register-container. input[type=text], .Sign-register-container. input[type=password] {
+.Sign-register-container. input[type=text],
+.Sign-register-container. input[type=password] {
     width: 30%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -237,7 +248,8 @@ tr:hover {
     background: white;
 }
 
-.Sign-register-container. input[type=text]:focus, .Sign-register-container. input[type=password]:focus {
+.Sign-register-container. input[type=text]:focus,
+.Sign-register-container. input[type=password]:focus {
     background-color: lightskyblue;
     outline: none;
 }
