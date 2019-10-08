@@ -19,6 +19,11 @@ Name of this website is "allUsee".
 You can find different entertainment places as well as their reviews using our website.
 You can even upload your own entertainment places on the submission page.
 
+NOTE:
+    1. We talk with professor, he said you could use sort by rating or name instead of using search by rating since sort by rate makes more sense. So we did that.
+    2. To see the individual sample object page, you should click the name of the first line in the search result list. 
+    3. To get to search result page, you need to click the search button on the top right in navigation bar.
+
 What we have:
  1. You can attach image and videos to introduce your submitted places.
  2. Thanks to HTML <picture> and <source> tag, for each submitted place, it's picture has two versions (small version and high-dpi version), which picture will be shown to users depends on the device user uses. Our website's logo, background and map sample are all have different versions as well.
