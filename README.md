@@ -24,18 +24,17 @@ For object submission page, go to index(homepage) page, click the Add icon near 
 
 
 On user registration page, we used javascript for form validation and also same for sign-in/sign-up page. 
-/
-/
-/
-/
-/
-/
-/
-/
-/
-/
-/
-/
+。
+。
+。
+。
+。
+。
+。
+。
+。
+。
+
 Below is the README for assignment 1. 
 Name of this website is "allUsee". You can find different entertainment places as well as their reviews using our website. You can even upload your own entertainment places on the submission page.
 
