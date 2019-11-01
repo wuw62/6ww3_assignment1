@@ -5,18 +5,22 @@
 
     <title>6ww3 Assignment1</title>
 
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIuRRCRNwwXqIu2aa4dv12L2q706AdEBU&callback=initmap" async defer></script>
+
     <!--This is for responsive page ajustment-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Use different css files for different screen size-->
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 1200px)" href="css/style_small.css" />
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px) and (orientation:landscape)" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px) and (orientation:landscape)"
+        href="css/style.css" />
 
 
 </head>
 
-<body>
+<body onload="initMapView()">
     <!--This is head also menu navigation bar-->
     <div class="menu">
         <div>
@@ -53,15 +57,11 @@
     <div class="result-container">
         <h1 style=color:white;>Search Result Map View</h1>
         <!--Sample object image-->
-        <div>
-            <!-- Two different maps for different display size-->
-            <picture>
-                <source media="(min-width: 1200px)" srcset="map.png">
-                <source media="(max-width: 1200px)" srcset="map_small.png">
-                <img src="map.png" alt="map_image">
-            </picture>
-        </div>
+
+        <div id="map" style="width: 900px; height: 330px;"></div>
+
     </div>
+
     <!--The button made for click and link to list view-->
     <a href="search_result_listview_page.html">
         <button class="list-view-button" onclick="window.location.href('search_result_listview_page.html')">back to list

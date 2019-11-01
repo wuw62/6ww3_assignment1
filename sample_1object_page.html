@@ -5,6 +5,9 @@
 
     <title>6ww3 Assignment1</title>
 
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIuRRCRNwwXqIu2aa4dv12L2q706AdEBU&callback=initmap" async defer></script>
+
     <!--This is for responsive page ajustment-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +18,7 @@
 
 </head>
 
-<body>
+<body onload="initMap()">
     <!--This is head also menu navigation bar-->
     <div class="menu">
         <div>
@@ -54,8 +57,12 @@
 
         <div>
             1829 Main St W, Hamilton, ON L8S 1H6
-            <br> 4.5/5.0
+            <br> Rating: 4.5/5.0
         </div>
+
+        <div id="map" style="width: 900px; height: 330px;"> </div>
+
+        <br>
         <div>
             <!--This is  two different images for standard resolution deisplay and high-DPI 2x resolution display -->
             <picture>
@@ -64,8 +71,9 @@
                 <img src="Steel_City_Billiards1_2x.png" alt="Image_of_Steel_City_Billiards1" style="width:auto;">
             </picture>
         </div>
+        <br>
         <div>
-            <video width="240" height="160" controls>
+            <video width="480" height="240" controls>
                 <source src="sample_video.mp4" type="video/mp4">
                 Your browser does not support the video.
             </video>

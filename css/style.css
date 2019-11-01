@@ -56,6 +56,11 @@ a {
     border: none;
 }
 
+.parent-container .search-container.buttonNearby {
+    font-size: 18px;
+    height: 28px;
+}
+
 
 /* This is style for the search container button */
 

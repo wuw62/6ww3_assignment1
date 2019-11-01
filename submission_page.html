@@ -5,13 +5,16 @@
 
     <title>6ww3 Assignment1</title>
 
+    <script type="text/javascript" src="scripts.js"></script>
+
     <!--This is for responsive page ajustment-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Use different css files for different screen size-->
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 1200px)" href="css/style_small.css" />
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px) and (orientation:landscape)" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px) and (orientation:landscape)"
+        href="css/style.css" />
 </head>
 
 <body>
@@ -23,8 +26,8 @@
                 <div class="dropdown">
                     <a href='signin_page.html'>
                         <button class="dropbtn" onclick="window.location.href('signin_page.html')">
-                        Signin/up
-                    </button>
+                            Signin/up
+                        </button>
                     </a>
                     <!--Search container box-->
                 </div>
@@ -32,14 +35,14 @@
                     <input type="text" placeholder="Search.." name="search">
                     <a href='search_result_listview_page.html'>
                         <button type="button" onclick="window.location.href('search_result_listview_page.html')"><i
-                            class="fa fa-search" title="search"></i></button>
+                                class="fa fa-search" title="search"></i></button>
                     </a>
                 </form>
                 <!--Dropdown button implemented and dropdown icon is inserted here-->
                 <div class="dropdown">
                     <button class="dropbtn">Rating
-                    <i class="fa fa-caret-down"></i>
-                </button>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
                     <div class="dropdown-content">
                         <a href="#">name</a>
                     </div>
@@ -49,28 +52,41 @@
     </div>
     <!--We used this type of container for submission as same as sign or register container here, a button for users to upload object with images and videos is provided-->
     <div class="Sign-register-container ">
-        <h1 style='font-size:20px'>Post your own object</h1>
+        <form action="">
+            <h1 style='font-size:20px'>Post your own object</h1>
 
-        <!--These button is for users to submit image and video, and text inputs-->
-        <div><button style='font-size:10px'>Upload Image <i class='fa fa-camera-retro'></i></button></div>
-        <div><button style='font-size:10px'>Upload Video <i class='fa fa-film'></i></button></div>
-        <div class="username-textbox-gap">
-            <p>object name</p>
-            <input type="text" name="username" required>
-        </div>
-        <br>
-        <div class="username-textbox-gap">
-            <p>object coordinate</p>
-            <input type="coordinate" name="coordinate" required>
-        </div>
-        <div class="username-textbox-gap">
-            <p>description</p>
-            <input type="text" name="description" required style="height:70px">
-        </div>
+            <!--These button is for users to submit image and video, and text inputs-->
+            <div><button style='font-size:10px'>Upload Image <i class='fa fa-camera-retro'></i></button></div>
+            <div><button style='font-size:10px'>Upload Video <i class='fa fa-film'></i></button></div>
+            <div class="username-textbox-gap">
 
-        <br>
-        <hr>
-        <button type="submit" class="register-button">Submit</button>
+                <p>object name</p>
+                <input type="text" name="username" required>
+            </div>
+            <br>
+            <!--Input box id added for geolocation below-->
+            <div class="username-textbox-gap">
+                <p>Lagitude and Longitude</p>
+                <input type="coordinate" name="coordinate" id="Latitude" required>
+                <input type="coordinate" name="coordinate" id="Longitude" required>
+            </div>
+            <div>
+                <script>
+                    var x = document.getElementById("Latitude");
+                    var y = document.getElementById("Longitude");
+                </script>
+                <button onclick="getLocation(x,y)">Use my current coordinate</button>
+
+            </div>
+            <div class="username-textbox-gap">
+                <p>description</p>
+                <input type="text" name="description" required style="height:70px">
+            </div>
+
+            <br>
+            <hr>
+            <button type="submit" class="register-button">Submit</button>
+        </form>
 
     </div>
 
