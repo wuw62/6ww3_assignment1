@@ -1,3 +1,6 @@
+/**
+ * Check if the username or password or password confirmation is empty
+ */
 function registration() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
@@ -5,7 +8,6 @@ function registration() {
     // var password = document.forms["RegForm"]["Password"];
     // var confirmation = document.forms[ "RegForm"]["Confirmation"];
 
-    // value = "ahahahaahh";
     if (username == "") {
         window.alert("Please enter your username.");
         name.focus();
@@ -24,6 +26,9 @@ function registration() {
     return true;
 }
 
+/**
+ * Check if the username or password is empty
+ */
 function signin() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
@@ -42,8 +47,9 @@ function signin() {
 }
 
 
-// var map, currentlocationWindow, locations, marker;
-
+/**
+ * Insert the google map
+ */
 function initMap() {
 
     map = new google.maps.Map(document.getElementById("map"), {
@@ -54,10 +60,10 @@ function initMap() {
         zoom: 14
     });
 
-    // This is HTML5 geolocation.
+    // This is HTML5 geolocation. Get current location
     currentlocationWindow = new google.maps.InfoWindow;
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
+        navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
@@ -67,7 +73,7 @@ function initMap() {
             currentlocationWindow.setContent('You are here.');
             currentlocationWindow.open(map);
             map.setCenter(pos);
-        }, function () {
+        }, function() {
             handleLocationError(true, currentlocationWindow, map.getCenter());
         });
     } else {
@@ -75,11 +81,14 @@ function initMap() {
         handleLocationError(false, currentlocationWindow, map.getCenter());
     };
 
+    /**
+     * This is for the Lable on markers on the map
+     */
     var locations = [
         ['Steel City Billiards', 43.252641, -79.938498, 4],
     ];
     var marker, i;
-    var contentString = 'haha';
+    var contentString = 'ha';
     var infowindow = new google.maps.InfoWindow({
         content: contentString,
         maxWidth: 200
@@ -88,19 +97,17 @@ function initMap() {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map,
-            animation: google.maps.Animation.DROP,
-            // label: labels[i % labels.length]
+            animation: google.maps.Animation.DROP, //map markers droppin animation
+
 
         });
 
-        // marker.addListener('click', function() {
-        //     infowindow.open(map, marker);
-        // });
 
 
 
-        google.maps.event.addListener(marker, 'click', (function (marker, i) {
-            return function () {
+        //listener for the click on markers
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
                 infowindow.setContent(locations[i][0]);
                 infowindow.open(map, marker);
             }
@@ -111,7 +118,9 @@ function initMap() {
 
 }
 
-// var map, currentlocationWindow, locations, marker;
+/**
+ * Insert the google map
+ */
 
 function initMapView() {
 
@@ -123,10 +132,10 @@ function initMapView() {
         zoom: 11
     });
 
-    // This is HTML5 geolocation.
+    // This is HTML5 geolocation. Get the current location and tell user where they are by infowindow
     currentlocationWindow = new google.maps.InfoWindow;
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
+        navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
@@ -136,7 +145,7 @@ function initMapView() {
             currentlocationWindow.setContent('You are here.');
             currentlocationWindow.open(map);
             map.setCenter(pos);
-        }, function () {
+        }, function() {
             handleLocationError(true, currentlocationWindow, map.getCenter());
         });
     } else {
@@ -144,7 +153,7 @@ function initMapView() {
         handleLocationError(false, currentlocationWindow, map.getCenter());
     };
 
-
+    //Contents in the label on steel city billiards marker
     var contentString = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
@@ -154,7 +163,7 @@ function initMapView() {
         '/sample_1object_page.html/' +
         '</div>' +
         '</div>';
-
+    //Location for all markers
     var locations = [
         ['Steel City Billiards', 43.252641, -79.938498, 4],
         ['Boulevard Billiards', 43.262850, -79.877766, 5],
@@ -170,28 +179,18 @@ function initMapView() {
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map,
             animation: google.maps.Animation.DROP,
-            // label: labels[i % labels.length]
+
 
         });
 
-        // marker.addListener('click', function() {
-        //     infowindow.open(map, marker);
-        // });
-
-
-
-        google.maps.event.addListener(marker, 'click', (function (marker, i) {
-            return function () {
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
                 if (i == 0) {
                     var infowindowForMark = new google.maps.InfoWindow();
                     infowindowForMark.setContent(contentString);
-                    // infowindow.setContent.contentString(locations = ['Steel City Billiards', 43.252641, -79.938498, 4]);
                     infowindowForMark.open(map, marker);
-                    // ? ? inforwindow.setContent.contentString(locations[4]);
-                    // infowindow.setContent(location[0]);
-                }
 
-                else {
+                } else {
                     var infowindowForMark = new google.maps.InfoWindow();
                     infowindowForMark.setContent(locations[i][0]);
                     // infowindow.setContent.contentString(locations = ['Steel City Billiards', 43.252641, -79.938498, 4]);
@@ -199,17 +198,6 @@ function initMapView() {
                 }
             }
         })(marker, i));
-        // google.maps.event.addListener(marker, 'click', (function(marker) {
-        //     return function() {
-        //         infowindow.setContent.contentString(locations = ['Steel City Billiards', 43.252641, -79.938498, 4]);
-        //         infowindow.open(map, marker);
-        //         // infowindow.setContent(location[0]);
-        //     }
-        // })(marker));
-
-
-
-
     };
     var infowindow = new google.maps.InfoWindow();
 }
@@ -221,7 +209,9 @@ function handleLocationError(browserHasGeolocation, currentlocationWindow, pos) 
         'Error: Your browser doesn\'t support geolocation.');
     currentlocationWindow.open(map);
 }
-
+/**
+ * Get coordiante for current location, x is latitude y is longitude
+ */
 function getLocation(x, y) {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
