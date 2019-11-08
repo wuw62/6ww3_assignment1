@@ -48,9 +48,3 @@ For add-on task 2, below are the answers for the brief questions: i. Since user 
 ii. For 3 poitive goals, like I mentioned above, it can help user save data usage; It can help accelerate loading speed if using a smaller screen; It can also help developers to build up a responsive webpage, because they can use this feature to fit in different screen size.
 
 iii. The down side of using and tags is that when you implement these tags, you have made a rule for the browser to follow, which is less flexible, since user may want to see high quility image on their phone. To avoid this problem, you can either stop using these tags or use javacript to create some kind of listener that listen to browser or users' requirement.
-
-```java
-public void retrieveBoard(){
-        // Get the MetaWear device via MAC address
-        final BluetoothManager bluetoothManager = (BluetoothManager) context.getSystemService(Context.BLUETOOTH_SERVICE);}
-```
