@@ -1,8 +1,8 @@
 Two developer:
 
-Tianyuan Zhang Std#: 400278995
+Tianyuan Zhang 
 
-Weiyi Wu Std#: 400224662
+Weiyi Wu
 
 This is a simple web project for COMPSCI 6WW3 assignment 2.
 
