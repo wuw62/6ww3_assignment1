@@ -8,7 +8,7 @@ This is a simple web project for COMPSCI 6WW3 assignment 2.
 
 A easy way to browser our website is using my domain name:
 
-www.midwinter.work/6ww3_assignment2
+https://midwinter.work/Billiard_Clubs_Review/
 
 Please note that: in this assignment, we have added encryption protocol into our server, it means you will have to use https to connect our server (Actually we have setup redirection method, if you still use http to send request, the request will be redirected to https.)
 
